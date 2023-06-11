@@ -67,7 +67,7 @@ def fakeID(user, history_string, prompt_format, candidate_list ):
         candidates = process1(candidate_list)
         history = json.dumps({"history articles": infor_his})
         candidate = json.dumps({"candidate articles": candidates})
-        Output_format = 'Output format: a python list of tuples (ID, title) that are exclusively from the provided list. Do not explain the reason or include any other words.'
+        Output_format = 'Output format: a python list of IDs that are exclusively from the provided list. Do not explain the reason or include any other words.'
         prompt = f"{Output_format} \nThe user has interacted with the following articles in the json file 'history article': {history}. " \
                  f"From the candidates listed in the json file 'candidate articles', choose the top {args.recommend_num} articles to " \
                  f"recommend to the user and rank them in order of priority from the highest to the lowest: {candidate}."
@@ -77,7 +77,7 @@ def fakeID(user, history_string, prompt_format, candidate_list ):
         candidates = process2(candidate_list)
         history = json.dumps({"history articles": infor_his})
         candidate = json.dumps({"candidate articles": candidates})
-        Output_format = 'Output format: a python list of tuples (ID, title) that are exclusively from the provided list. Do not explain the reason or include any other words.'
+        Output_format = 'Output format: a python list of IDs that are exclusively from the provided list. Do not explain the reason or include any other words.'
         prompt = f"{Output_format} \nThe user has interacted with the following articles in the json file 'history article': {history}. " \
                  f"From the candidates listed in the json file 'candidate articles', choose the top {args.recommend_num} articles to " \
                  f"recommend to the user and rank them in order of priority from the highest to the lowest: {candidate}."
