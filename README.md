@@ -1,5 +1,5 @@
 Evaluate ChatGPT's capability in news recommendation from three perspectives: personalization, provider fairness, and fake news. 
-The data is in the 'data' folder, and all prompts we tried are in 'src' folder 
+The data is in the `data` folder, and all prompts we tried are in `src` folder 
 
 For more details, you can refer to the following paper:
 
